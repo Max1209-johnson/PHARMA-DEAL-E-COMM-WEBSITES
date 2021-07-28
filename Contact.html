@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <link rel="icon" type="image/png" href="img/PharmaDeal1.png">
+    <title>PharmaDeal</title>
+    <style>
+        .item {
+            background: #fff;
+            text-align: center;
+            padding: 30px 25px;
+            -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+            border-radius: 20px;
+            border: 5px solid rgba(0, 0, 0, 0.07);
+            margin-bottom: 30px;
+            -webkit-transition: all .5s ease 0;
+            transition: all .5s ease 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .item:hover {
+            background: green;
+            box-shadow: 0 8px 20px 0px rgba(255, 0, 0, 0.2);
+            -webkit-transition: all .5s ease 0;
+            transition: all .5s ease 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .item:hover .item,
+        .item:hover span.icon {
+            background: #fff;
+            border-radius: 10px;
+            -webkit-transition: all .5s ease 0;
+            transition: all .5s ease 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .item:hover .item,
+        .item:hover span.icon,
+        .site {
+            color: white;
+            border-radius: 10px;
+            -webkit-transition: all .5s ease 0;
+            transition: all .5s ease 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .item:hover h6,
+        .item:hover p,
+        .item:hover .site {
+            color: #fff;
+            -webkit-transition: all .5s ease 0;
+            transition: all .5s ease 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .item .icon {
+            font-size: 40px;
+            margin-bottom: 25px;
+            width: 90px;
+            height: 90px;
+            line-height: 96px;
+            border-radius: 50px;
+        }
+        
+        .item h6 {
+            margin-bottom: 20px;
+            color: #2f2f2f;
+        }
+        
+        .section-head h4 {
+            position: relative;
+            padding: 0;
+            color: green;
+            line-height: 1;
+            letter-spacing: 0.3px;
+            font-size: 34px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: none;
+            margin-bottom: 30px;
+        }
+        
+        .section-head h4:before {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background: green;
+            position: absolute;
+            left: 0px;
+            bottom: -10px;
+            right: 0;
+            margin: 0 auto;
+        }
+        
+        .section-head h4 span {
+            font-weight: 700;
+            padding-bottom: 5px;
+            color: #990000;
+            font-size: 83px;
+        }
+        
+        p.service_text {
+            color: #cccccc !important;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+        }
+        
+        .section-head p,
+        p.awesome_line {
+            color: #818181;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+        }
+        
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        body {
+            font-family: "Poppins", sans-serif !important;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container img {
+            margin-left: -15px;
+            margin-top: -16px;
+        }
+        
+        span,
+        a,
+        a:hover {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <section class=" background">
+        <div class="upper_links shadow">
+            <div class="container hidden-mobile">
+                <div class="row">
+                    <div class="col-2 facebook">
+                        <a href=""><i class="fas fa-envelope"></i> <span>pharmadeal@gmail.com</span></a>
+
+                    </div>
+                    <div class="col-2 facebook">
+                        <a href=""><i class="fas fa-phone"></i> <span>+91 XXXXXXXXXX</span></a>
+
+                    </div>
+                    <div class="col-2 facebook">
+                        <a href=""><i class="far fa-clock"></i> <span>24×7 Help-line Number</span></a>
+
+                    </div>
+
+                    <div class="col-3">
+
+
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-3 facebook">
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="col-3 facebook">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="col-3 facebook">
+                                <a href=""><i class="fab fa-google-plus"></i></a>
+                            </div>
+                            <div class="col-3">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#"><img src="img/PharmaDeal1.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-links ">
+                            <ul class="navbar ">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-link-ltr " href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-link-ltr" href="Company.html">Company</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-link-ltr" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ml-3 mr-3 mt-2 mb-4 ">
+                        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                            <input type="text" placeholder="Search.." name="search2">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+
+                        </form>
+                    </div>
+                    <div class="buttons mb-2">
+                        <a href="login.html" class="login">
+                            <button type="button" class="btn btn-outline-success login">Login</button>
+                        </a>
+                        <a href="Register.html">
+                            <button type="button" class="btn btn-outline-success login">Sign-Up</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </section>
+    <section class="sponsers">
+        <!-- sponsers -->
+        <div class="feat bg-gray pt-5 pb-5" style="background-color:rgb(211, 206, 206,0.4);margin-top:0" id="Partners">
+            <div class="container">
+                <div class="row">
+                    <div class="section-head col-sm-12">
+                        <h4 style="margin-top: 30px; font-size:350%"><span>Our</span> Sponsors</h4>
+
+                        <p style="font-size: large; font-weight:bold;">
+                            The We care foundation gratefully acknowledges the generosity of our sponsors. Their support, along with that of our members, helps make it possible to accomplish all that we do.
+                        </p>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class=""><img src="img/logo1.webp"
+                                            style="height: 90%;"></i></span>
+                                    <h6 style="font-size: 180%;font-weight:bold;">Apple</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class=""><img src="img/logo2.webp"
+                                            style="height: 90%;"></i></span>
+                                    <h6 style="font-size: 180%;font-weight:bold;">Microsoft</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class=""><img src="img/logo3.webp"
+                                            style="height: 90%;"></i></span>
+                                    <h6 style="font-size: 180%;font-weight:bold;">HP</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class=""><img src="img/logo4.webp"
+                                            style="height: 90%;"></i></span>
+                                    <h6 style="font-size: 180%;font-weight:bold;">Skype</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class=""><img src="img/logo5.webp"
+                                            style="height: 90%;"></i></span>
+                                    <h6 style="font-size: 180%;font-weight:bold;">Amazon</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class=""><img
+                                            src="https://dl.dropboxusercontent.com/s/9x3hcsdf5kn2gns/Niton%20valves.jpg?dl=0"
+                                            style="height: 90%;"></i></span>
+                                    <h6 style="font-size: 180%;font-weight:bold;">Nitton Valves</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="body">
+        <div class="container">
+
+            <div class=" accordion_one">
+                <div class="panel-group" id="accordionFourLeft">
+                    <div class="panel panel-default">
+                        <h1 class="text-success">Frequently asked questions</h1>
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion_oneLeft" href="#collapseFiveLeftone" aria-expanded="false" class="collapsed"> Why Font Awesome used </a> </h4>
+                        </div>
+                        <div id="collapseFiveLeftone" class="panel-collapse collapse" aria-expanded="false" role="tablist" style="height: 0px;">
+                            <div class="panel-body">
+                                <div class="img-accordion"> <img src="https://img.icons8.com/color/81/000000/person-female.png" alt=""> </div>
+                                <div class="text-accordion">
+                                    <p> Why Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font
+                                        Awesome usedWhy Font Awesome usedWhy Font Awesome used </p>
+                                </div>
+                            </div>
+                            <!-- end of panel-body -->
+                        </div>
+                    </div>
+                    <!-- /.panel-default -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion_oneLeft" href="#collapseFiveLeftTwo" aria-expanded="false"> Why Font Awesome used and its benefits </a> </h4>
+                        </div>
+                        <div id="collapseFiveLeftTwo" class="panel-collapse collapse" aria-expanded="false" role="tablist" style="height: 0px;">
+                            <div class="panel-body">
+                                <div class="img-accordion"> <img src="https://img.icons8.com/color/81/000000/person-female.png" alt=""> </div>
+                                <div class="text-accordion">
+                                    <p> Why Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome used </p>
+                                </div>
+                            </div>
+                            <!-- end of panel-body -->
+                        </div>
+                    </div>
+                    <!-- /.panel-default -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion_oneLeft" href="#collapseFiveLeftThree" aria-expanded="false"> Why Font Awesome used for its own </a> </h4>
+                        </div>
+                        <div id="collapseFiveLeftThree" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                            <div class="panel-body">
+                                <div class="img-accordion"> <img src="https://img.icons8.com/color/81/000000/person-female.png" alt=""> </div>
+                                <div class="text-accordion">
+                                    <p> Why Font Awesome used for its own Why Font Awesome used for its own Why Font Awesome used for its own Why Font Awesome used for its own Why Font Awesome used for its own Why Font Awesome used for its own Why Font Awesome
+                                        used for its own </p>
+                                </div>
+                            </div>
+                            <!-- end of panel-body -->
+                        </div>
+                    </div>
+                    <!-- /.panel-default -->
+                </div>
+                <!--end of /.panel-group-->
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+    <section class="footer text-white bg-success">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <div class="icons">
+                            <div class="text-center mt-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 mb-5">
+                                            <a href="#" class="fa fa-twitter"><i class="fab fa-twitter"></i> </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="fa fa-instagram "><i class="fab fa-instagram"></i> </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="fa fa-linkedin"><i class="fab fa-linkedin"></i> </a>
+                                        </div>
+                                        <div class="col-6 mb-5">
+                                            <a href="#" class="fa fa-facebook "><i class="fab fa-facebook-f"></i> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-1 mt-5">
+                        <h3>Contact</h3>
+                        <p><i class=" fas fa-map-marker-alt "></i> Address..........</p>
+                        <p><i class="fas fa-phone "></i> Phone: +91 XXXXXXXXXX</p>
+                        <p><i class="fas fa-envelope "></i> Email: <a href="pharmadeal@gmail.com ">pharmadeal@gmail.com</a></p>
+                        <p><i class="fab fa-skype "></i> Skype: you_online</p>
+                    </div>
+                    <div class="col-md-4 mt-5 ">
+                        <div class="row ">
+                            <div class="col ">
+                                <h3>Links</h3>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 mt-2 ">
+                                <p><a class="scroll-link " href="#top-content ">Home</a></p>
+                                <p><a href="# ">Features</a></p>
+                                <p><a href="# ">How it works</a></p>
+                                <p><a href="# ">Our clients</a></p>
+                            </div>
+                            <div class="col-md-6 mt-2 ">
+                                <p><a href="# ">Plans &amp; pricing</a></p>
+                                <p><a href="# ">Affiliates</a></p>
+                                <p><a href="# ">Terms & Conditions</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
